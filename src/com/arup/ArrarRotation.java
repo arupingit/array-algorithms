@@ -6,6 +6,8 @@ package com.arup;
  * d is number of places the array is rotated
  * n is the size of the array
  * 
+ * https://www.geeksforgeeks.org/array-rotation/
+ * 
  * @author dutta.arup59@gmail.com
  *
  */

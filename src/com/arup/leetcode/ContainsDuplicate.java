@@ -1,7 +1,6 @@
 package com.arup.leetcode;
 
 import java.util.HashSet;
-import java.util.Hashtable;
 
 /**
  * 217. Contains Duplicate

@@ -1,4 +1,4 @@
-package com.arup;
+package com.arup.gfg;
 
 public class FindSumFromSortedAndRotatedArray {
 

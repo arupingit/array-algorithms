@@ -1,4 +1,4 @@
-package com.arup;
+package com.arup.gfg;
 /**
  * This is an algorithm to rotate the array using reversal algorithm
  * Inputs:

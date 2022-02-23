@@ -1,5 +1,6 @@
 package com.arup.leetcode;
 
+import java.util.HashSet;
 import java.util.Hashtable;
 
 /**
@@ -43,12 +44,12 @@ public class ContainsDuplicate {
 	}
 	
 	public static boolean containsDuplicate(int[] nums) {
-		Hashtable<Integer,Integer> checkDup = new Hashtable();
+		HashSet<Integer> checkDup = new HashSet();
 		for(int i=0;i<nums.length;i++){
-			if(checkDup.get(nums[i])!=null){
+			if(checkDup.contains(nums[i])){
 				return true;
 			}
-			checkDup.put(nums[i], nums[i]);
+			checkDup.add(nums[i]);
 		}
 		return false; 
     }

@@ -47,17 +47,23 @@ public class FirstMissingPositive {
 	public static int firstMissingPositive(int[] nums) {
 		int smallestPositive;
 		int index;
+		
+		//Set all values less than 0 to Array out of bound value
 		for(int i=0;i<nums.length;i++){
 			if(nums[i]<1){
 				nums[i] = nums.length + 1;
 			}
 		}
+		
+		//Mark values of indexes to negative incase the index is present in array 
 		for(int i=0;i<nums.length;i++){
 			index = Math.abs(nums[i])-1;
 			if(index<nums.length && nums[index]>0){
 				nums[index] = -nums[index];
 			}
 		}
+		
+		//Find the smallest index where value is positive
 		for(smallestPositive = 1;smallestPositive<=nums.length;smallestPositive++){
 			if(nums[smallestPositive-1]>0){
 				break;
